@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <input type="text" class="display" id="calculatorDisplay" readonly>
+    <br>
+    <button class="numbers" onclick="addDigit('1')">1</button>
+    <button class="numbers" onclick="addDigit('2')">2</button>
+    <button class="numbers" onclick="addDigit('3')">3</button>
+    <button class="operators" onclick="addOperation('+')">+</button>
+    <br><br>
+    <button class="numbers" onclick="addDigit('4')">4</button>
+    <button class="numbers" onclick="addDigit('5')">5</button>
+    <button class="numbers" onclick="addDigit('6')">6</button>
+    <button class="operators" onclick="addOperation('-')">-</button>
+    <br><br>
+    <button class="numbers" onclick="addDigit('7')">7</button>
+    <button class="numbers" onclick="addDigit('8')">8</button>
+    <button class="numbers" onclick="addDigit('9')">9</button>
+    <button class="operators" onclick="addOperation('*')">*</button>
+    <br><br>
+    <button class="numbers" onclick="addDigit('0')">0</button>
+    <button class="numbers" onclick="addDecimal()">.</button>
+    <button class="numbers" onclick="calculateResult()">=</button>
+    <button class="operators" onclick="addOperation('/')">/</button>
+    <br>
+    <br>
+    <button class="clear" onclick="clearCalculator()">Clear</button>
+    <script src = "calculator.js"></script>
+</body>
+</html>
